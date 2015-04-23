@@ -1,0 +1,9 @@
+Arthur Colle 111153114
+
+Task 3 explanation
+
+For Task 3 we were able to use libraries in addition to code we wrote ourselves. I used Python in both the first and second projects. The decision tree I designed was effective and while the f-score was >= 0.9, it still was not among the best performers in the class as I only received a 0.8. For the association rules, I used an abridged form of the algorithm that also had an f-score of >= 0.9, and my grade was a little better. 
+
+Given my newfound familiarity with Python, I decided to look for well documented libraries, at which point I found the sklearn package. As with the first two projects I used the pandas library in Task 3 because of the facility with which one is able to manipulate spreadsheet-like structures called DataFrames. After loading the training dataset into a DataFrame, I split off the OK column as its own list, and then used a subset of the training dataset DataFrame as my training samples, with the OK column list as my class labels. These were renamed X and y, just like the basic tutorial in the documentation. I used the SVC class, created a svm.SVC object, and used the fit method to train the support vector machine (the documentation calls it a support vector classifier).
+Iterating through the test dataset, I then predicted each value sequentially, which outputted values of either 0 or 1. Given a different training dataset, the code can be easily extended to support multi-class classification (OK values beyond 0, 1 or 2).
+
